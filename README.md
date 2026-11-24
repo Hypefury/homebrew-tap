@@ -12,4 +12,4 @@ It builds from source, so it needs the Xcode command line tools (`xcode-select -
 brew services start hypefury/tap/blackroija
 ```
 
-The formula follows the newest `v*` tag of the app's repo; a workflow here updates it within the hour.
+The formula follows the newest `v*` tag of the app's repo; a workflow here updates it right after a tag is pushed, and every hour as a backup.

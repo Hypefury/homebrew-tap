@@ -1,10 +1,14 @@
 # Points the formula at the newest v* tag of Hypefury/blackroija.
-# Runs every hour and on demand. Needs no secrets.
+# Runs when blackroija pushes a tag (its notify workflow sends the event),
+# every hour as a backup, and on demand. Needs no secrets.
 name: Update formula
 on:
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [blackroija-tag]
+concurrency: update-formula
 permissions:
   contents: write
 jobs:
