@@ -1,8 +1,8 @@
 class Blackroija < Formula
   desc "Floating window that lists your Claude Code sessions and what they need"
   homepage "https://github.com/Hypefury/blackroija"
-  url "https://github.com/Hypefury/blackroija/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "a7efd9b78100eaafd18aa0925a90630e1880e047ce74b716a6e951bbbba2b4f1"
+  url "https://github.com/Hypefury/blackroija/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "da70609a5ea4dc3ce9f4e6db9fab991192d213971f8bbf5f3f62eff0cab12350"
   license "MIT"
 
   depends_on macos: :sonoma
